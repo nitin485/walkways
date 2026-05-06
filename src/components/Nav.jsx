@@ -1,7 +1,7 @@
 import { RiShoppingCartFill } from "@remixicon/react";
 function Nav() {
   return (
-    <nav className="py-4   bg-gray-200 ">
+    <nav className="py-4   bg-gray-100 ">
       <div
         className="max-w-7xl mx-auto px-4 bg-grey-400    h-16
       flex flex-col md:flex-row md:items-center md:justify-between gap-3 "

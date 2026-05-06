@@ -58,8 +58,8 @@ const PremiumSneakerHero = () => {
         <div className="lg:col-span-7 relative h-full min-h-[450px] flex items-center justify-center pt-10">
           
           {/* Shadow & Pedestal - Adjusted Z-index and Blur */}
-          <div className="absolute bottom-[20%] w-[70%] h-16 bg-red-600/30 blur-[70px] rounded-[100%] opacity-50" />
-          <div className="absolute bottom-[22%] w-[60%] h-10 bg-gradient-to-b from-[#111] to-black border border-white/10 rounded-[100%] shadow-[0_15px_40px_rgba(220,38,38,0.2)]" />
+          {/* <div className="absolute bottom-[20%] w-[70%] h-16 bg-red-600/30 blur-[70px] rounded-[100%] opacity-50" /> */}
+          {/* <div className="absolute bottom-[22%] w-[60%] h-10 bg-gradient-to-b from-[#111] to-black border border-white/10 rounded-[100%] shadow-[0_15px_40px_rgba(220,38,38,0.2)]" /> */}
           
           {/* Main Shoe Image - Optimized size and rotation */}
           <div className="relative z-20 transform transition-all duration-700 hover:scale-[1.08]">
