@@ -1,6 +1,5 @@
 import React from "react";
 import { RiShoppingCart2Line } from "@remixicon/react";
-  
 
 function Card({ product }) {
   // console.log(product?.thumbnail)
@@ -16,7 +15,7 @@ function Card({ product }) {
           className="object-cover w-full h-full   "
         />
       </div>
-      <div className=" flex flex-col  gap-1 pt-6 pl-2 h-full bg-[#ffffff]"> 
+      <div className=" flex flex-col  gap-1 pt-6 pl-2 h-full bg-[#ffffff]">
         <p className="uppercase">{product?.brand}</p>
         <p className="font-semibold text-lg opacity-90">{product?.title}</p>
         <p></p>
@@ -42,10 +41,13 @@ function Card({ product }) {
             {product?.discountPercentage}
           </p>
         </div>
-               {/* Add To Cart Icon */}
+        {/* Add To Cart Icon */}
         <button className="text-black p-2.5 rounded-full bg-gray-50 hover:bg-black hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer group">
-  <RiShoppingCart2Line size={20} className="group-hover:scale-110 transition-transform duration-300" />
-</button>
+          <RiShoppingCart2Line
+            size={20}
+            className="group-hover:scale-110 transition-transform duration-300"
+          />
+        </button>
       </div>
     </div>
   );

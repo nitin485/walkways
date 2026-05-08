@@ -18,6 +18,7 @@ function Nav() {
           px-4 h-16
           flex items-center justify-between
           gap-4
+          
         "
       >
         {/* Logo */}
