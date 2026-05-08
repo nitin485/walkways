@@ -1,12 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "walkways backend",
+  "keywords": [
+    "node",
+    "nitin"
+  ],
   "license": "ISC",
-  "author": "",
+  "author": "nitin bhardwaj",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

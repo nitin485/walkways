@@ -41,7 +41,8 @@ function Categories() {
                   <img
                     src={categ.image}
                     alt="shoes image"
-                    className="w-full h-38 object-contain p-4"
+                    className="w-full h-38 object-contain p-4
+                    hover:scale-120"
                   />
                   {/* caption of shoes */}
                   <div className="text-sm uppercase text-center">
