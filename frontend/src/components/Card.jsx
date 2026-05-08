@@ -18,7 +18,7 @@ function Card({ product }) {
       </div>
       <div className=" flex flex-col  gap-1 pt-6 pl-2 h-full bg-[#ffffff]"> 
         <p className="uppercase">{product?.brand}</p>
-        <p className="font-bold text-lg opacity-90">{product?.title}</p>
+        <p className="font-semibold text-lg opacity-90">{product?.title}</p>
         <p></p>
 
         {/* ================== */}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PremiumSneakerHero = () => {
   return (
-    <section className="relative w-full h-[75vh] min-h-[550px] max-h-[700px] bg-[#050505] overflow-hidden flex items-center justify-center font-sans text-white px-6 md:px-12 lg:px-20 ">
+    <section className="relative w-full h-[75vh] min-h-[550px] max-h-[700px] bg-[#050505] overflow-hidden flex items-center justify-center font-sans text-white px-6 md:px-12 lg:px-20 mt-16 ">
       {/* Premium Red Glow Aura */}
       <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none" />
 

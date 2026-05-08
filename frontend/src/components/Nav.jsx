@@ -1,34 +1,106 @@
 import { RiShoppingCartFill } from "@remixicon/react";
+
 function Nav() {
   return (
-    <nav className="py-1   ">
+    <nav
+      className="
+        fixed top-0 left-0 w-full
+        z-50
+        bg-white/80
+        backdrop-blur-md
+        shadow-sm
+        
+      "
+    >
       <div
-        className="max-w-7xl mx-auto px-4 bg-grey-400    h-16
-      flex flex-col md:flex-row md:items-center md:justify-between gap-3 "
+        className="
+          max-w-7xl mx-auto
+          px-4 h-16
+          flex items-center justify-between
+          gap-4
+        "
       >
-          {/* logo */}
-        <h1 className="text-xl font-bold text-red-800 text-shadow-amber-900">Walkways</h1>
+        {/* Logo */}
+        <h1
+          className="
+            text-2xl font-bold
+            text-red-700
+            tracking-wide
+            cursor-pointer
+          "
+        >
+          WalkWays
+        </h1>
 
-        {/* search bar */}
-        <div className="relative w-full    md:max-w-xl ">
+        {/* Search Bar */}
+        <div className="relative flex-1 max-w-xl hidden md:block">
           <input
             type="text"
-            placeholder="Search for shoes , brands..."
-            className="w-full p-2 pr-24 border focus:border-red-500  00 rounded-3xl focus:outline-none"
+            placeholder="Search for shoes, brands..."
+            className="
+              w-full py-2 px-4 pr-24
+              border border-gray-300
+              rounded-full
+              focus:outline-none
+              focus:border-black
+            "
           />
-          <button className="absolute right-1 top-1 bg-[#111827] text-white px-3 py-1 rounded-3xl hover:bg-sky-700">
+
+          <button
+            className="
+              absolute right-1 top-1
+              bg-black text-white
+              px-4 py-1
+              rounded-full
+              hover:bg-gray-800
+              transition
+            "
+          >
             Search
           </button>
         </div>
 
-        {/* sign in and cart btn */}
-        <div className="flex justify-center items-center ">
-          <button className="bg-[#E5E4E2] text-black px-4 py-2 rounded-xl w-full md:w-auto ">
+        {/* Buttons */}
+        <div className="flex items-center gap-4">
+          <button
+            className="
+              bg-gray-200
+              hover:bg-gray-300
+              px-4 py-2
+              rounded-xl
+              transition
+              font-medium
+            "
+          >
             Log in
           </button>
-          <button className="flex ml-4 relative   ">
-            <RiShoppingCartFill className="my-icon " size={22} />
-            <span className="absolute left-6 bottom-2">0</span>
+
+          {/* Cart */}
+          <button
+            className="
+              relative
+              hover:scale-110
+              transition duration-300
+              cursor-pointer
+            "
+          >
+            <RiShoppingCartFill size={26} />
+
+            {/* Cart Count */}
+            <span
+              className="
+                absolute
+                -top-2 -right-2
+                bg-red-500 text-white
+                text-[10px]
+                w-5 h-5
+                rounded-full
+                flex items-center justify-center
+                font-semibold
+              "
+            >
+              0
+            </span>
           </button>
         </div>
       </div>
