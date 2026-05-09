@@ -44,7 +44,7 @@ function Card({ product }) {
             </p>
           </div>
           {/* Add To Cart Icon */}
-          <button className="text-black p-2.5 rounded-full   flex justify-between bg-gray-50 hover:bg-gray-900 hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer group">
+          <button className="text-black  mt-2 p-2 rounded-full   flex justify-between bg-gray-50 hover:bg-gray-900 hover:text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer group">
             <RiShoppingCart2Line
               size={20}
               className="group-hover:scale-110 transition-transform duration-300"

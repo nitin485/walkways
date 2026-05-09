@@ -5,14 +5,16 @@ import Card from "../components/Card";
 import Nav from "../components/Nav";
 import ProductSection from "../components/ProductSection"
 import PROcateg from "../components/ProductRenderOnCateg"
+import Footer from "../components/Footer"
 function MainLayout() {
   return (
     <>
       <Nav />
       <Banner />
       <Categories />  
-      <ProductSection/>
+      {/* <ProductSection/> */}
       <PROcateg/>
+      <Footer/>
       
     </>
   );
