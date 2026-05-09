@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
-import Card from "./Card";
+import { useEffect, useState } from "react";
 
-function ProductSection() {
-  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch("/data/demoData.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.log(err));
-  }, []);
+//   const [products, setProducts] = useState([]);
 
-  const latest = products
-    .filter((item) => item.badges.includes("latest"))
-    .slice("0", "4");
-  const trending = products.filter((item) => item.badges.includes("latest"));
-  const bestseller = products.filter((item) => item.badges.includes("latest"));
+//   useEffect(() => {
+//     fetch("/data/demoData.json")
+//       .then((res) => res.json())
+//       .then((data) => setProducts(data))
+//       .catch((err) => console.log(err));
+//   }, []);
 
+//   const latest = products
+//     .filter((item) => item.badges.includes("latest"))
+//     .slice("0", "4");
+//   const trending = products.filter((item) => item.badges.includes("latest"));
+//   const bestseller = products.filter((item) => item.badges.includes("latest"));
+
+function ProductRenderOnCateg() {
   return (
     <section className="py-12 ">
       <div className="max-w-7xl mx-auto px-4">
@@ -59,4 +59,4 @@ function ProductSection() {
   );
 }
 
-export default ProductSection;
+export default ProductRenderOnCateg;
