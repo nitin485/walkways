@@ -1,4 +1,5 @@
 import { RiShoppingCartFill } from "@remixicon/react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -63,6 +64,33 @@ function Nav() {
 
         {/* Buttons */}
         <div className="flex items-center gap-4">
+          {/* ------------------------------------ */}
+          {/* explore now btn */}
+
+{/* 
+          <button
+            className="
+              bg-gray-200
+              hover:bg-gray-300
+              px-4 py-2
+              rounded-xl
+              transition
+              font-medium
+            "
+          >
+                  <Link to="contact">Explore now</Link>
+          </button> */}
+
+<Link 
+  to="/product" 
+  className="inline-flex items-center justify-center px-6 py-2.5 bg-gray-200 hover:bg-gray-300 text-gray-900 font-semibold rounded-xl transition-colors duration-200 ease-in-out"
+>
+  Explore now
+</Link>
+
+
+{/* -------------------------------------- */}
+
           <button
             className="
               bg-gray-200
@@ -103,6 +131,9 @@ function Nav() {
               0
             </span>
           </button>
+
+
+
         </div>
       </div>
     </nav>
