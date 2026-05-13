@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-// import Banner from '../'
+import Banner from '../assets/full-shot-man-resting-basketball.jpg'
 import Card from "../components/Card";
 
 function Shop() {
@@ -129,13 +129,14 @@ function Shop() {
     <section className="bg-white min-h-screen pt-20">
 
       {/* HERO */}
-      <div className="relative h-[260px] md:h-[320px] overflow-hidden">
+      <div className="relative h-[260px] md:h-[420px] overflow-hidden">
 
         <img
-        //   src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-        src="https://www.magnific.com/free-vector/modern-black-friday-sale-banner-template-with-3d-background-red-splash_5952228.htm#fromView=search&page=1&position=0&uuid=27940ebd-7936-4885-9917-8fc989032081&query=Banner+shoes"
+          // src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+          src={Banner}
+        // src="https://www.magnific.com/free-vector/modern-black-friday-sale-banner-template-with-3d-background-red-splash_5952228.htm#fromView=search&page=1&position=0&uuid=27940ebd-7936-4885-9917-8fc989032081&query=Banner+shoes"
           alt="banner"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
         />
 
         {/* overlay */}
@@ -145,7 +146,7 @@ function Shop() {
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-white">
 
           <h1 className="text-3xl md:text-5xl font-semibold tracking-[2px] uppercase">
-            Men’s Sneakers Collection
+            {/* Men’s Sneakers Collection */}
           </h1>
 
           {/* breadcrumb */}
