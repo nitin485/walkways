@@ -3,6 +3,7 @@ import MainLayout from "./layout/MainLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Shop from "./pages/Shop";
 import Home from "./pages/Home";
+import ProductDesc from "./components/ProductDesc";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ function App() {
           path: "product",
           element: <Shop />,
         },
+        {
+          path:"desc",
+          element:<ProductDesc/>
+        }
       ],
     },
   ]);

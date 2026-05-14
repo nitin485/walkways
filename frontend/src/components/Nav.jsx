@@ -11,7 +11,7 @@ function Nav() {
         backdrop-blur-md
         shadow-sm
         
-      "
+      " 
     >
       <div
         className="
@@ -46,8 +46,8 @@ function Nav() {
               focus:outline-none
               focus:border-black
             "
+            
           />
-
           <button
             className="
               absolute right-1 top-1
@@ -60,6 +60,7 @@ function Nav() {
           >
             Search
           </button>
+          
         </div>
 
         {/* Buttons */}
@@ -67,7 +68,7 @@ function Nav() {
           {/* ------------------------------------ */}
           {/* explore now btn */}
 
-{/* 
+          {/* 
           <button
             className="
               bg-gray-200
@@ -81,15 +82,14 @@ function Nav() {
                   <Link to="contact">Explore now</Link>
           </button> */}
 
-<Link 
-  to="/product" 
-  className="inline-flex items-center justify-center px-6 py-2.5 bg-gray-200 hover:bg-gray-300 text-gray-900 font-semibold rounded-xl transition-colors duration-200 ease-in-out"
->
-  Explore now
-</Link>
+          <Link
+            to="/product"
+            className="inline-flex items-center justify-center px-6 py-2.5 text-[14px] text-gray-900 font-semibold rounded-xl transition-colors duration-200 ease-in-out"
+          >
+            Explore now
+          </Link>
 
-
-{/* -------------------------------------- */}
+          {/* -------------------------------------- */}
 
           <button
             className="
@@ -131,9 +131,6 @@ function Nav() {
               0
             </span>
           </button>
-
-
-
         </div>
       </div>
     </nav>
